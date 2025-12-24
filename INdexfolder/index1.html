@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neurify | AI-Powered Growth</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#050505',
+                            charcoal: '#0F0F0F',
+                            card: '#161616',
+                            border: '#262626',
+                            blue: '#3b82f6',
+                            violet: '#8b5cf6',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #050505; color: #ffffff; }
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, #262626 1px, transparent 1px),
+                              linear-gradient(to bottom, #262626 1px, transparent 1px);
+            mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+            opacity: 0.15;
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 30px -5px rgba(139, 92, 246, 0.3);
+            border-color: rgba(139, 92, 246, 0.5);
+        }
+        input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 top-0 left-0 border-b border-brand-border bg-brand-dark/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-display font-bold text-2xl tracking-tight text-white flex items-center gap-1">
+                Neurify<span class="text-brand-violet">.</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm text-gray-400 font-medium">
+                <a href="#services" class="hover:text-white transition-colors">Services</a>
+                <a href="#process" class="hover:text-white transition-colors">Process</a>
+                <a href="#benefits" class="hover:text-white transition-colors">Why Neurify</a>
+            </div>
+            <a href="#contact" class="hidden md:block bg-white text-black px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-gray-200 transition-colors">
+                Book a Call
+            </a>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 bg-grid z-0 pointer-events-none"></div>
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-brand-violet/20 rounded-full blur-[120px] pointer-events-none z-0"></div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-card border border-brand-border mb-8">
+                <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                <span class="text-xs font-medium text-gray-400 uppercase tracking-wider">Accepting New Clients</span>
+            </div>
+            <h1 class="font-display text-5xl md:text-7xl font-bold leading-tight tracking-tight mb-6">
+                 Websites & Ai-Powered Virtual Receptionists That Turn <span class="text-gradient">Attention Into Revenue</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 font-light">
+                Neurify builds conversion-focused websites and 24/7 AI receptionists that answer calls, book appointments, and never miss a lead.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-white text-black rounded-full font-semibold hover:scale-105 transition-transform duration-200 shadow-[0_0_20px_rgba(255,255,255,0.3)] text-center">
+                    Get a Free Mockup
+                </a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-brand-card border border-brand-border text-white rounded-full font-medium hover:bg-brand-border transition-colors text-center">
+                    Book a Call
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-brand-charcoal border-y border-brand-border relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">Core Intelligence</h2>
+                <p class="text-gray-400">Precision systems for local businesses and online brands.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group p-8 bg-brand-card border border-brand-border rounded-2xl transition-all duration-300 glow-hover">
+                    <div class="w-12 h-12 bg-brand-border rounded-lg flex items-center justify-center mb-6 text-brand-blue font-bold">01</div>
+                    <h3 class="font-display text-xl font-bold mb-3">High-Converting Websites</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Custom-built websites designed to turn traffic into sales. No clutter, just conversions.</p>
+                </div>
+                <div class="group p-8 bg-brand-card border border-brand-border rounded-2xl transition-all duration-300 glow-hover">
+                    <div class="w-12 h-12 bg-brand-border rounded-lg flex items-center justify-center mb-6 text-brand-violet font-bold">02</div>
+                    <h3 class="font-display text-xl font-bold mb-3">24/7 AI Receptionists</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">AI that answers calls, qualifies leads, and books appointments automatically while you sleep.</p>
+                </div>
+                <div class="group p-8 bg-brand-card border border-brand-border rounded-2xl transition-all duration-300 glow-hover">
+                    <div class="w-12 h-12 bg-brand-border rounded-lg flex items-center justify-center mb-6 text-white font-bold">03</div>
+                    <h3 class="font-display text-xl font-bold mb-3">Custom Website Mockups</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">We design a full, premium mockup for your business before you ever commit to a build.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="py-24 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="font-display text-3xl md:text-4xl font-bold text-center mb-16">The Protocol</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-brand-border mb-4">01</div>
+                    <h4 class="font-bold text-lg mb-2">Tell us about your business</h4>
+                    <p class="text-gray-400 text-sm">Fill out the brief below with your vision and goals.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-brand-violet mb-4">02</div>
+                    <h4 class="font-bold text-lg mb-2">We design + automate</h4>
+                    <p class="text-gray-400 text-sm">We build your custom mockup and train your AI receptionist agent.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-brand-border mb-4">03</div>
+                    <h4 class="font-bold text-lg mb-2">You get more sales</h4>
+                    <p class="text-gray-400 text-sm">Watch your bookings and revenue grow with 24/7 precision.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="py-24 bg-brand-charcoal border-y border-brand-border">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="font-display text-3xl md:text-4xl font-bold mb-8">Built for Growth</h2>
+                <ul class="space-y-6">
+                    <li class="flex items-start gap-4">
+                        <span class="text-brand-blue font-bold">✓</span>
+                        <div>
+                            <span class="block font-bold">Built for conversion, not looks only</span>
+                            <span class="text-gray-400 text-sm">Every pixel is placed to drive a specific action.</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="text-brand-blue font-bold">✓</span>
+                        <div>
+                            <span class="block font-bold">AI that works 24/7</span>
+                            <span class="text-gray-400 text-sm">Never miss a lead or a call, even on holidays or weekends.</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="text-brand-blue font-bold">✓</span>
+                        <div>
+                            <span class="block font-bold">Faster follow-ups</span>
+                            <span class="text-gray-400 text-sm">Speed to lead is the #1 factor in closing local service deals.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-brand-dark p-8 rounded-2xl border border-brand-border shadow-2xl">
+                <div class="text-brand-violet font-display font-bold text-xl mb-4">System Status: Active</div>
+                <div class="space-y-4">
+                    <div class="h-2 w-full bg-brand-border rounded-full overflow-hidden"><div class="h-full w-4/5 bg-brand-blue"></div></div>
+                    <div class="h-2 w-full bg-brand-border rounded-full overflow-hidden"><div class="h-full w-3/5 bg-brand-violet"></div></div>
+                    <div class="h-2 w-full bg-brand-border rounded-full overflow-hidden"><div class="h-full w-2/3 bg-white"></div></div>
+                </div>
+                <p class="mt-6 text-xs text-gray-500 font-mono italic">"The AI agent handled 42 calls this week with a 90% booking rate."</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-brand-dark relative">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-4xl font-bold mb-4">See What Neurify Can Build</h2>
+                <p class="text-gray-400">Provide your vision and book your call in one step.</p>
+            </div>
+
+            <div class="bg-brand-card border border-brand-border p-8 md:p-12 rounded-3xl shadow-2xl">
+                <form action="https://formspree.io/f/xpqappgg" method="POST" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-500 mb-2">Full Name</label>
+                            <input type="text" name="name" required class="w-full bg-brand-dark border border-brand-border rounded-lg p-3 text-white focus:outline-none focus:border-brand-violet transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-500 mb-2">Phone</label>
+                            <input type="tel" name="phone" required class="w-full bg-brand-dark border border-brand-border rounded-lg p-3 text-white focus:outline-none focus:border-brand-violet transition-colors">
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-500 mb-2">Email Address</label>
+                            <input type="email" name="_replyto" required class="w-full bg-brand-dark border border-brand-border rounded-lg p-3 text-white focus:outline-none focus:border-brand-violet transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-500 mb-2">Business Name</label>
+                            <input type="text" name="business_name" required class="w-full bg-brand-dark border border-brand-border rounded-lg p-3 text-white focus:outline-none focus:border-brand-violet transition-colors">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-500 mb-2">Service Wanted</label>
+                            <select name="service" class="w-full bg-brand-dark border border-brand-border rounded-lg p-3 text-gray-300 focus:outline-none focus:border-brand-violet transition-colors appearance-none">
+                                <option>High-Converting Website</option>
+                                <option>AI Receptionist</option>
+                                <option>Full Scale (Both)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-500 mb-2">Preferred Discovery Call Time</label>
+                            <input type="datetime-local" name="call_time" required class="w-full bg-brand-dark border border-brand-border rounded-lg p-3 text-white focus:outline-none focus:border-brand-violet transition-colors">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-gray-500 mb-2">Business Overview & Mockup Vision</label>
+                        <textarea name="vision_description" rows="4" required class="w-full bg-brand-dark border border-brand-border rounded-lg p-3 text-white focus:outline-none focus:border-brand-violet transition-colors resize-none" placeholder="What does your business do? What would you like to see in your mockup (vibes, colors, specific goals)?"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-gradient-to-r from-brand-blue to-brand-violet text-white font-bold py-4 rounded-lg mt-4 hover:scale-[1.02] transition-transform">
+                        Request Free Mockup
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-brand-border text-center">
+        <span class="font-display font-bold text-xl text-white">Neurify<span class="text-brand-violet">.</span></span>
+        <p class="text-xs text-gray-500 mt-2">© 2024 Neurify. Premium AI Solutions.</p>
+    </footer>
+
+</body>
+</html>
